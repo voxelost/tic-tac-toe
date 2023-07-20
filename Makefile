@@ -1,5 +1,7 @@
 .PHONY: *
 
+_default: run_attached
+
 run_attached: _init_submodules
 	docker-compose up --build
 
